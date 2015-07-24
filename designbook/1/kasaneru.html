@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>重ねる</title>
+</head>
+<style>
+.boxA {
+	background:#a0e0fe;
+	color:#00a0e9;
+	border: 8px solid #00a0e9;
+}
+.boxA .box1 {
+	background:#ffffee;
+	color:#e0e03d;
+	border: 8px solid #e0e03d;
+	line-height: 200px;
+	text-align: center;
+	font-size: 40px;
+}
+.boxA .box2 {
+	background:#ffc2c9;
+	color:#eb6877;
+	border: 8px solid #eb6877;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+}
+.boxA {
+	position: relative;
+}
+.box2 {
+	position: absolute;
+	bottom:-50px;
+	right:0;
+}
+</style>
+<body>
+
+<div class="boxA">
+	<div class="box1">
+		BOX1
+	</div>
+	<div class="box2">
+		BOX2
+	</div>
+</div>
+
+</body>
+</html>

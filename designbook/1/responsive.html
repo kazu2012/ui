@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>responsive</title>
+</head>
+<style>
+.b1 {
+	background:#F8BBD0;
+	color:#D81B60;
+	border: 4px solid #F48FB1;
+	text-align: center;
+	box-sizing:border-box;
+	font-size: 40px;
+	line-height: 400px;
+}
+.nav {
+	line-height: 100px;
+}
+.b2 {
+	background:#FFF8E1;
+	border: 4px solid #FFE082;
+	color:#FFCA28;
+}
+.b3 {
+	background:#E1F5FE;
+	border: 4px solid #4FC3F7;
+	color:#03A9F4;
+}
+@media(min-width: 768px) {
+	.clearBox:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.floatBox {
+		float:left;
+	}
+	.b70 {
+		width: 70%;
+	}
+	.b30 {
+		width: 30%;
+	}
+}
+</style>
+<body>
+
+<div class="b1 nav">
+BOX1	
+</div>
+
+<div class="clearBox">
+	<div class="b1 b2 floatBox b70">
+		BOX2
+	</div>
+	<div class="b1 b3 floatBox b30">
+		BOX3
+	</div>
+</div>
+
+</body>
+</html>

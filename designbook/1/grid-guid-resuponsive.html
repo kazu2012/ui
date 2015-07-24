@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BOXの練習</title>
+	<link rel="stylesheet" href="grid-guide.css">
+</head>
+<style type="text/css">
+.boxB {
+		border:none;
+}
+@media(min-width: 600px) {
+	.boxB:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.box2 {
+		width:75%;
+		float:right;
+	}
+	.box3 {
+		width:25%;
+		float:left;
+	}
+}
+@media(min-width: 768px) {
+	.boxA:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.boxB {
+		width:80%;
+		float:left;
+	}
+	.box4 {
+		width:20%;
+		float:left;
+	}
+}
+</style>
+<body>
+
+<div class="box1">
+BOX1
+</div>
+
+<div class="boxA">
+	<div class="boxB">
+		<div class="box2">
+			BOX2
+		</div>
+		<div class="box3">
+			BOX3
+		</div>
+	</div>
+	<div class="box4">
+		BOX4
+	</div>
+</div>
+
+</body>
+</html>
