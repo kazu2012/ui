@@ -1,5 +1,0 @@
-連載URL
-http://gihyo.jp/design/serial/01/sarudekiwp?start=40
-
-vagrant
-C:\GitHub\vagrant\wordpress
