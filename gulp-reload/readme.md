@@ -38,9 +38,24 @@ node_modules, gulpfile.js,  package.json は、手順の中で作成していき
 > npm install browser-sync gulp --save-dev
 ```
 
-#### 2. gulpfile.js を編集
+#### 2. gulpfile.js の作成
 
-内容は、gulpfile.js を参照。
+```
+gulpfile.js の内容。
+```
+
+リロードしたいファイルは、サーバ起動タスクの index で指定する。
+
+```
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "src",
+            index: "index.html"
+        }
+    });
+});
+```
 
 
 #### 3. gulp 実行
